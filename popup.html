@@ -19,16 +19,16 @@
     <div class="container">
       <div id="add-section">
         <div class="mb-3">
-          <label for="cname">Name:</label><br />
+          <label for="cname">Name:</label>
           <input
             class="form-control form-control-sm"
             type="text"
             id="cname"
             name="cname"
-          /><br />
+          />
         </div>
         <div class="mb-3">
-          <label for="ctext">Text:</label><br />
+          <label for="ctext">Text:</label>
           <textarea
             class="form-control form-control-sm"
             id="ctext"
@@ -43,11 +43,13 @@
           type="submit"
           value="Submit"
         />
+        <button id="cancel-btn" class="btn btn-danger">Cancel</button>
       </div>
       <div id="clip-section">
         <div class="row">
           <div>
             <button
+              id="add-new-btn"
               class="add-new-btn btn btn-outline-primary btn-sm float-end"
             >
               <i class="bi bi-bookmark-plus"></i>&nbsp;Add New
