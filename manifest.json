@@ -1,6 +1,6 @@
 {
   "name": "eClip",
-  "description": "Seamlessly paste responses and to complete your forms!",
+  "description": "Seamlessly paste responses to complete your forms quicker!",
   "version": "1.0",
   "manifest_version": 3,
   "background": {
@@ -9,5 +9,10 @@
   "permissions": ["storage"],
   "action": {
     "default_popup": "popup.html"
+  },
+  "icons": {
+    "16": "assets/icon16.png",
+    "48": "assets/icon48.png",
+    "128": "assets/icon128.png"
   }
 }
