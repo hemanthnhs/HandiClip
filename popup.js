@@ -18,30 +18,37 @@ window.addEventListener("load", () => {
   // Render clips to screen
 
   function renderClips() {
-    clipsTable.innerHTML = "Hola";
+    debugger;
+    if (Object.keys(clips).length == 0) {
+      clipsTable.innerHTML =
+        "<div class='no-results'>No clips found...add to seamlessly paste reponses !!</div>";
+      return;
+    }
+    clipsTable.innerHTML = "Loading...";
     let newClips = "";
     let btnIds = [];
     let delBtnIds = [];
     for (const [key, value] of Object.entries(clips)) {
       let id = key.replace(/\s/g, "-").toLowerCase();
       let newInnerHTML =
-        "<div class='card'><div class='card-header row'><div class='col-8'>" +
-        key +
-        "</div>" +
-        "<div class='col-2'><button id='" +
+        "<div class='card'>" +
+        "<div class='card-header row'>" +
+        "<div class='col-8'>" +
+        "<button class='card-header-btn' id='" +
         "btn-" +
         id +
-        "' class='btn btn-outline-success btn-sm copy-btn float-end'>Copy</button></div>" +
-        "<div class='col-2'><button id='" +
-        "del-btn-" +
-        id +
-        "' class='btn btn-outline-danger btn-sm copy-btn float-end'>Delete</button></div></div>" +
+        "'>" +
+        "<i class='bi bi-files'></i>&nbsp;&nbsp;" +
+        key +
+        "</button></div>" +
+        "</div>" +
         "<textarea type='text' id='" +
         "text-" +
         id +
         "' class='card-body form-control card-text' readonly>" +
         value +
-        "</textarea></div>";
+        "</textarea>" +
+        "</div>";
       btnIds.push("btn-" + id);
       delBtnIds.push("del-btn-" + id);
       newClips = newClips + newInnerHTML;
