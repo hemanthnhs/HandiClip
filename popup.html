@@ -3,7 +3,9 @@
   <head>
     <link rel="stylesheet" href="popup.css" />
     <link href="./assets/bootstrap.min.css" rel="stylesheet" />
+    <script src="./assets/popper.min.js"></script>
     <script src="./assets/bootstrap.bundle.min.js"></script>
+    <script src="./assets/jquery-3.6.0.min.js"></script>
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css"
@@ -11,12 +13,15 @@
     <script src="popup.js"></script>
   </head>
   <body>
+    <!-- Header -->
     <nav class="navbar nav-bg">
       <div class="container">
         <span class="navbar-brand mb-0 h1">HandiClip</span>
       </div>
     </nav>
+    <!-- Content -->
     <div class="container">
+      <!-- Add New Page -->
       <div id="add-section">
         <div class="mb-3">
           <label for="cname">Name:</label>
@@ -25,6 +30,7 @@
             type="text"
             id="cname"
             name="cname"
+            placeholder="Enter a unique key for this clip...."
           />
         </div>
         <div class="mb-3">
@@ -35,16 +41,18 @@
             name="ctext"
             rows="10"
             cols="30"
+            placeholder="Enter text that you could like to use for faster access or to copy to clipboard...."
           ></textarea>
         </div>
         <input
           id="submit-btn"
           class="btn btn-success"
           type="submit"
-          value="Add"
+          value="Save"
         />
         <button id="cancel-btn" class="btn btn-danger">Back</button>
       </div>
+      <!-- Clips Page -->
       <div id="clip-section">
         <div class="row">
           <div>
@@ -56,6 +64,7 @@
             </button>
           </div>
         </div>
+        <!-- Placeholder for clips -->
         <div id="clipsTable"></div>
       </div>
     </div>

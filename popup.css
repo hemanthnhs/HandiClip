@@ -1,7 +1,8 @@
 body {
   width: 450px;
-  height: 150px;
+  height: 10px;
   background-color: #0c3b78 !important;
+  color: snow !important;
 }
 
 .nav-bg {
@@ -38,7 +39,7 @@ html {
 }
 
 .card-header-btn {
-  width: 60%;
+  width: 50%;
   border-radius: 3px 3px 0px 0px !important;
   background-color: #3e6fb9 !important;
   padding: 0px 0px 0px 10px;
@@ -48,6 +49,34 @@ html {
   color: snow;
   text-align: start;
   font-size: medium;
+}
+
+.delete-btn {
+  border: unset;
+  background-color: transparent !important;
+  height: 30px;
+  color: snow;
+  text-align: start;
+  font-size: medium;
+}
+
+.delete-btn:hover {
+  background-color: #3f0404 !important;
+  border-color: #8fa2c0 !important;
+}
+
+.edit-btn {
+  border: unset;
+  background-color: transparent !important;
+  height: 30px;
+  color: snow;
+  text-align: start;
+  font-size: medium;
+}
+
+.edit-btn:hover {
+  background-color: #013125 !important;
+  border-color: #8fa2c0 !important;
 }
 
 .card-body {
@@ -70,6 +99,11 @@ html {
   border-color: #8fa2c0 !important;
 }
 
+.card-header-btn:hover {
+  background-color: #5e91dd !important;
+  border-color: #8fa2c0 !important;
+}
+
 .copy-btn {
   height: 4vh !important;
   font-size: 12px !important;
@@ -78,6 +112,12 @@ html {
 
 #add-section {
   margin-top: 10px;
+  padding-bottom: 30px;
+}
+
+#clip-section {
+  margin-bottom: 5px;
+  padding-bottom: 30px;
 }
 
 .navbar > .container {
@@ -88,4 +128,29 @@ html {
   color: snow;
   padding-top: 50px;
   padding-bottom: 70px;
+  text-align: center;
+}
+
+.btn-danger {
+  color: #fff;
+  background-color: #980e1c !important;
+  border-color: #980e1c !important;
+}
+
+.btn-danger:hover {
+  color: #fff;
+  background-color: #ac0e1e !important;
+  border-color: #77030f !important;
+}
+
+.btn-success {
+  color: #fff;
+  background-color: #025a32 !important;
+  border-color: #025a32 !important;
+}
+
+.btn-success:hover {
+  color: #fff;
+  background-color: #036d3d !important;
+  border-color: #0a9c5a !important;
 }
