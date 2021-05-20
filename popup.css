@@ -104,26 +104,30 @@ html {
   border-color: #8fa2c0 !important;
 }
 
+/* Styling for Add New */
+#add-section {
+  margin-top: 10px;
+  padding-bottom: 30px;
+}
+
+/* Styling for clips */
+#clip-section {
+  margin-bottom: 5px;
+  padding-bottom: 30px;
+}
+
 .copy-btn {
   height: 4vh !important;
   font-size: 12px !important;
   padding: 0px 6px 0px 6px !important;
 }
 
-#add-section {
-  margin-top: 10px;
-  padding-bottom: 30px;
-}
-
-#clip-section {
-  margin-bottom: 5px;
-  padding-bottom: 30px;
-}
-
+/* Styling for navbar */
 .navbar > .container {
   justify-content: center !important;
 }
 
+/* Styling for no results */
 .no-results {
   color: snow;
   padding-top: 50px;
@@ -131,6 +135,7 @@ html {
   text-align: center;
 }
 
+/* Standard Bootstrap Buttons Styling */
 .btn-danger {
   color: #fff;
   background-color: #980e1c !important;
