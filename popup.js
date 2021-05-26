@@ -70,7 +70,9 @@ window.addEventListener("load", () => {
     clipsTable.innerHTML = newClips;
     // Attaching events for copy buttons
     btnIds.forEach((btnId) => {
-      document.getElementById(btnId).addEventListener("click", copyToClipboard);
+      document
+        .getElementById(btnId)
+        .addEventListener("click", (ev) => copyToClipboard(ev));
       $("#" + btnId).tooltip({
         trigger: "manual",
         title: "Copied to clipboard",
@@ -81,11 +83,13 @@ window.addEventListener("load", () => {
     delBtnIds.forEach((btnId) => {
       document
         .getElementById(btnId)
-        .addEventListener("click", deleteFromClipboard);
+        .addEventListener("click", (ev) => deleteFromClipboard(ev));
     });
     // Attaching events for edit buttons
     editBtnIds.forEach((btnId) => {
-      document.getElementById(btnId).addEventListener("click", editClip);
+      document
+        .getElementById(btnId)
+        .addEventListener("click", (ev) => editClip(ev));
     });
   };
 
@@ -163,6 +167,7 @@ window.addEventListener("load", () => {
   document.getElementById("submit-btn").addEventListener("click", () => {
     let name = cNameDom.value;
     let text = cTextDom.value;
+    name = name.replace(/\s/g, "-").toLowerCase();
     if (!isValidName(name)) {
       alertSection.innerHTML =
         "Name is invalid. Please enter a valid single word for Name.";

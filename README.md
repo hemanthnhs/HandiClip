@@ -2,6 +2,9 @@
 
 Handiclip is a chrome extension to seamlessly paste texts/responses to complete your forms quicker !!
 
+Extension is available through Chrome Web Store
+https://chrome.google.com/webstore/detail/handiclip/efpgbnaglmeomnnamjpcibibpflkhink
+
 Handiclip gives an easy way to have all your important text content such as key notes, links, frequently used responses and so on in one place. Each saved text can be given a title to remember it by. You have the option to copy the content to the clipboard seamlessly with a click of button and also edit/delete any of the content from Handiclip.
 
 What inspired to build this simple but very useful tool?
